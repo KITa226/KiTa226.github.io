@@ -1,0 +1,172 @@
+header {background-color: #4169e1;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        width: 100%;
+        margin-left: auto;
+margin-right: auto;}
+
+h1 {color: #4169e1;
+    text-align: center;}
+
+h2 {text-align: center;
+    color: black;
+    font-size: 20px;}
+
+h3 {
+  padding: 1rem 3rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+  background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+  background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+}
+
+h4 {
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  position: relative;
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .1);
+    margin: 40px;
+    width:300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4:before,
+h4:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-linear-gradient(315deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+  background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+}
+
+h4:before {
+  top: 0;
+}
+
+h4:after {
+  bottom: 0;
+}
+
+h5 {
+    font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  padding: 1.5rem 2rem;
+    margin: 30px;
+  color: #000;
+  background-image: -webkit-linear-gradient(315deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+  background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+    border-radius: 100vh;
+    font-size: 30px;
+    text-align: center;
+}
+
+a {color: #000;}
+
+p { text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #c0c0c0;}
+
+#date {text-align: right;}
+
+#container {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+  }
+
+#start {
+  opacity: 0;
+  animation: appeare 0s ease 1s 1 normal forwards running;
+}
+
+#first {
+  opacity: 0;
+  animation: appeare 0s ease 3s 1 normal forwards running;
+}
+
+#second {
+  opacity: 0;
+  animation: appeare 0s ease 5s 1 normal forwards running;
+}
+
+#third {
+  opacity: 0;
+  animation: appeare 0s ease 7s 1 normal forwards running;
+}
+@keyframes appeare {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a.btn--red.btn--cubic {
+  border-bottom: 5px solid #59b9c6;
+background-color:  #a2d7dd;
+    margin:30px;
+}
+
+a.btn--red.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #59b9c6;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - .5em);
+  right: 1rem;
+}
+
+.balloon1-left {
+  position: relative;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+}
+
+.balloon1-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+
+.balloon1-left p {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+  padding:10px 15px;
+}
+
+td{
+  padding:10px 15px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>めでたき知らせ</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+
+</head>
+<body>
+
+ <header>令和３年　<b>辻問答</b></header>
+
+<article>
+    <h1>ご予参かたじけなくさぶらいき</h1>
+
+    <p>貴君のいらえまさしく<br>
+        けふの賜物此れより選び給へ
+    </p>
+
+    <div class="form-container container" id="app">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">名前</label>
+            <div class="form-row">
+              <div class="col">
+                <input v-model="form.firstName" type="text" class="form-control" placeholder="名字">
+                <small v-bind:class="{'is-hide':validation.firstName}"  class="form-text text-info">{{ errorMessage.firstName }}</small>
+              </div>
+              <div class="col">
+                <input v-model="form.lastName" type="text" class="form-control" placeholder="名前">
+                <small v-bind:class="{'is-hide':validation.lastName}"  class="form-text text-info">{{ errorMessage.lastName }}</small>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">電話番号</label>
+            <input v-model="form.tel" type="tel" class="form-control" id="exampleInputEmail1" placeholder="電話番号">
+            <small v-bind:class="{'is-hide':validation.tel}" class="form-text text-info">{{ errorMessage.tel }}</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">メールアドレス</label>
+            <input v-model="form.email" type="email" class="form-control" id="exampleInputEmail1" placeholder="メールアドレス">
+            <small v-bind:class="{'is-hide':validation.email}" class="form-text text-info">{{ errorMessage.email }}</small>
+          </div>
+          
+        </form>
+        <div class="btn-container"><button type="submit" v-bind:disabled="!isValid" class="btn btn-primary" onclick="location.href='index3.html'">送信</button></div>
+      </div>
+    
+      
+    
+
+    
+</article>
+
+
+
+
+    <script>
+        var app = new Vue({
+  el: '#app',
+  data() {
+    return {
+      form: {
+        firstName: '',
+        lastName: '',
+        tel: '',
+        email: ''
+      },
+      errorMessage: {
+        firstName: '名字を入力してください',
+        lastName: '名前を入力してください',
+        tel: '電話番号を入力してください',
+        email: 'メールアドレスを入力してください'
+      }
+    }
+  },
+
+  computed: {
+    validation() {
+      const form = this.form
+        return {
+          firstName : !!form.firstName,
+          lastName : !!form.lastName,
+          tel : (() => {
+            if(!!form.tel) {
+              form.tel.replace(/[━.*‐.*―.*－.*\-.*ー.*\-]/gi,'')
+              if (!form.tel.match(/^(0[5-9]0[0-9]{8}|0[1-9][1-9][0-9]{7})$/)) {
+                return false
+              }
+              return true
+            } else {
+              return false
+            }
+          })(),
+          email : (() => {
+            if(!!form.email) {
+              if (!form.email.match(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/)) {
+                return false
+              }
+              return true
+            } else {
+              return false
+            }
+          })()
+        }
+      },
+      isValid() {
+        var validation = this.validation
+        return Object.keys(validation).every(function (key) {
+          return validation[key]
+      })
+    }
+  }
+})
+    </script>
+
+
+</body>
+</html>
