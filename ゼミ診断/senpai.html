@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>ゼミ診断</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/style1.css">
+    </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>$(window).scroll(function(){
+  //Header
+  if($(window).scrollTop()>= 100){
+     $('.header').addClass('fixed-top');
+  }
+  else {
+    $('.header').removeClass('fixed-top');
+  }
+  //Footer
+    var navpanel = $('.bottom-nav');
+    var panelHeight = navpanel.height() - 4;
+    var footerHeight = $('.footer').height();
+    if( $(document).height() - panelHeight - footerHeight <= $(window).scrollTop() + $(window).height() ) {
+      navpanel.removeClass('fixed-bottom');
+    } 
+  else {
+    navpanel.addClass('fixed-bottom');
+  }
+  
+});</script>
+<body>
+ <!----- header----->
+ <header class="header">
+  <div class="container">
+    <h1 class="logo"><img src="img/logo.png"  alt="西日本工業大学" width=40px style="margin-top: 10px;"></h1>
+      
+    <ul class="nav">
+      <li><a href="home.html">ゼミ診断</a></li>
+      <li><a href="senpai.html">先輩の口コミ</a></li>
+      <li><a href="movie.html">動画</a></li>
+
+    </ul>
+  </div>
+</header>
+
+ <!----- /header ----->
+ 
+ <!----- main ----->
+<main>
+<article class="SP">
+
+<h3>今中ゼミ</h3>
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>常にニコニコしていてよく話に乗ってくれるので、個人的に一番話しやすい。</p>
+    </div>
+  </div>
+</div>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>3年生に4年生の卒研状況を発表でみせたり、縦割りの交流を設けてくれた。</p>
+    </div>
+  </div>
+</div>
+    
+<h3>梶谷ゼミ</h3>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>多数のプロジェクトにアサインされました。</p>
+    </div>
+  </div>
+</div>
+ 
+<h3>趙ゼミ</h3>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>ゼミは24時間営業です。</p>
+    </div>
+  </div>
+</div>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>LINEの返信スピードが人間の限界を超えていると思う。<br>打つ前から既読がついている。</p>
+    </div>
+  </div>
+</div>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>機材が豊富。</p>
+    </div>
+  </div>
+</div>
+  
+<h3>中島ゼミ</h3>  
+
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>エルゴノミクスチェアーは、100円以上の価値があります。<br>後輩にも薦めたいです。</p>
+    </div>
+  </div>
+</div>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>いつもいい匂いがするので、低学年の頃から気になっていました。</p>
+    </div>
+  </div>
+</div>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>３Dプリンターを使えるのがいい。</p>
+    </div>
+  </div>
+</div>
+    
+<h3>浜地ゼミ</h3>
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>普段はクールでシャイな雰囲気。よく笑う一面も。</p>
+    </div>
+  </div>
+</div>
+
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>コンペなどの決められたテーマでやる取り組みよりも、<br>学生本人がやりたいと思うことをやってほしいという方針。</p>
+    </div>
+  </div>
+</div>
+    
+    <div class="balloon5">
+  <div class="faceicon">
+ <img src="img/woman.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>研究室は学生が使いたければ基本的に自由に使わせてもらえる。<br>特に縛りはなく、やりたいことがやりやすい自由なゼミ。<br>自主的な行動中心。</p>
+    </div>
+  </div>
+</div>
+   
+<h3>宝珠山ゼミ</h3>
+    <div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>知的な言い回しがためになります。<br>わからない言葉は、先生に聞いたりスマホで調べたりして一年間過ごしたので、<br>ボキャブラリーが増えました。</p>
+    </div>
+  </div>
+</div>
+    
+
+<h3>領木ゼミ</h3>
+    <div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>細かいところまで理解度に合わせて、ソースとともに<br>教えてくださるので、わからなくても頑張れました。</p>
+    </div>
+  </div>
+</div>
+    
+<div class="balloon5">
+  <div class="faceicon">
+ <img src="img/man.png">
+  </div>
+  <div class="chatting">
+    <div class="says">
+      <p>コロナ禍で原則リモートの時、授業外で<br>１時間も時間を割いてくれました。救世主です。</p>
+    </div>
+  </div>
+</div>
+
+</article>  
+</main>
