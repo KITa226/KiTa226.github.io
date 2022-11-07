@@ -352,6 +352,11 @@ z-index: -1;
     text-align: center;
 }
 
+.responsive {
+width: 100%;
+aspect-ratio: 16/9;
+}
+
 .add{
     padding-top: 30px;
 }
