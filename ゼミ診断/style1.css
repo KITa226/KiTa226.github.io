@@ -84,7 +84,7 @@ height: auto;
 }
 
 .main{
-    background-image: url("../img/background.png");
+    background-image: url("background.png");
     background-repeat: repeat-y;
     background-size: contain;
     padding-bottom: 80px;
@@ -205,7 +205,7 @@ footer{
     max-width: 1920px;
     width: 100p%;
     margin: 0 auto;
-    background-image: url(../img/background.png);
+    background-image: url(background.png);
     background-size: 100%;
     background-repeat: repeat-y;
     padding-top: 100px;
@@ -247,7 +247,7 @@ footer{
 }
 
 .answer{
-    background-image: url(../img/background-white.png);
+    background-image: url(background-white.png);
     background-size: 100%;
     background-repeat: repeat-y;
     padding-bottom: 100px;
@@ -342,7 +342,7 @@ z-index: -1;
 
 .hoge{
     margin-top: -20px;
-    background-image: url(../img/background-white.png);
+    background-image: url(background-white.png);
     background-size: 100%;
     background-repeat: repeat-y;
     padding-bottom: 300px;
