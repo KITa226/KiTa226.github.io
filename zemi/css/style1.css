@@ -1,0 +1,362 @@
+*{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  font-family:arial;
+}
+body{
+    margin:0;    
+}
+
+.banner{
+  background:#B61D00;
+  line-height:400px;
+  text-align:center;
+  color:#fff;
+  font-size:60px;
+  height:400px;
+  width: 100%;
+}
+
+
+
+.header{
+  height:60px;
+  background:#B61D00;
+  color:#fff;
+  width:100%;
+}
+.logo{
+  margin:0;
+  line-height:50px;
+  float:left;
+}
+.nav{
+  list-style:none;
+  float:left;
+}
+.nav li{display:inline-block;}
+.nav li a{
+  display:inline-block;
+   padding:3px 15px;
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  max-width:1200px;
+  padding:0 15px;
+  width:100%;
+  
+}
+.container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.copy{
+  font-size:10px;
+  text-align:center
+}
+.bottom-nav{
+  text-align:center;
+  background:#B61D00;
+  width:100%;
+  color:#fff;
+  height:35px
+}
+.bottom-nav .nav{float:none; margin:0}
+.bottom-nav .nav a{ padding: 0 25px; line-height:35px}
+.fixed-top, .fixed-bottom{
+  background:#B61D00;
+  position:fixed;
+  top:0;
+}
+.fixed-bottom{
+  top:auto;
+  bottom:0;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+.main{
+    background-image: url("../img/background.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    padding-bottom: 80px;
+}
+
+
+
+.sub{
+    background-color: #31344D;
+    color: #FDFFFC;
+    
+}
+
+.sub-inner{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 48px;
+    padding-bottom: 75px;       
+}
+
+.about-title{
+    color: #FDFFFC;
+    font-family: 'M+';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.35;
+    letter-spacing: .1em;
+    text-align: center;
+    padding: 10px;
+}
+
+
+p {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: .11em;
+    font-family: 'M+';
+    font-weight: 600;
+    text-align: left;
+}
+
+/* button */
+.button a{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 247px;
+    padding: 10px 25px;
+    color: #FDFFFC;
+    background-color: #323232;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #000;
+}
+.button a:hover {
+    transform: translateY(-2px);
+    
+}
+
+/*.btn li> ::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #FDFFFC;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 3px;
+}*/
+
+.btn{
+    width: 50%;
+    font-family: "M+";
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #B61D00;
+    color: #FDFFFC;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 90%;
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 55px;
+}
+
+.btn p{
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    font-family: "M+";
+    font-size: 11px;
+    font-weight: 100;
+    background-color: #000000;
+    color: #FDFFFC;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    bottom: 0px;
+    margin :0px;
+}
+
+.main-index{
+    max-width: 1920px;
+    width: 100p%;
+    margin: 0 auto;
+    background-image: url(../img/background.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+.question{
+    background-color: #FDFFFC;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 0 rgb(0 0 0 / 50%);
+    padding-bottom: 30px;
+}
+
+.image-title{
+    width: 230px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kasen{
+    margin: 0 auto;
+    width: 230px;
+    color: #31344D;
+    font-family: "Calibri";
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: dotted 5px #F02D3A;
+    text-align: center;
+    letter-spacing: .10em;
+}
+
+.text{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.answer{
+    background-image: url(../img/background-white.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    padding-bottom: 100px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.osusume{
+    margin: 0 auto;
+    font-family: "M+";
+    font-weight: 600;
+    text-align: center;
+}
+
+.zemi{
+    font-family: "M+";
+    font-weight: 600;
+    text-align: center;
+}
+
+h3{
+    font-family: "M+";
+    font-weight: 600;
+    margin-left: 30px;
+    line-height: 1.8;
+    letter-spacing: .11em;
+}
+
+.seikaku{
+    font-family: "M+";
+    font-weight: 600;
+    margin-left: 30px;
+    line-height: 1.8;
+    letter-spacing: .11em;
+    padding-bottom: 50px;
+    border-bottom: dotted 2px gray;
+}
+.modoru{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.balloon5 {
+  width: 100%;
+  /*margin: 1.5em 0;*/
+  overflow: hidden;
+margin-left: 30px;
+    margin-top: 30px;
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+z-index: -1;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+.hoge{
+    margin-top: -20px;
+    background-image: url(../img/background-white.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    padding-bottom: 300px;
+}
+
+.mp4{
+    text-align: center;
+}
+
+.add{
+    padding-top: 30px;
+}
+
+.responsive {
+width: 100%;
+aspect-ratio: 16/9;
+}
