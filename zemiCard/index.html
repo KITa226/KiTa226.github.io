@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>ゼミ診断</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+    </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<body>
+
+<div class="container">
+<ul id="filterBtnList">
+<li id="filterAll" class="all is_active"><img src="img/all.png" class="swt"></li>
+<li id="filterRed" class="red"><img src="img/cg.png" class="swt"></li>
+<li id="filterGreen" class="green"><img src="img/game.png" class="swt"></li>
+<li id="filterBlue" class="blue"><img src="img/visual.png" class="swt"></li>
+<li id="filterYellow" class="yellow"><img src="img/VR.png" class="swt"></li>
+<li id="filterGold" class="gold"><img src="img/camera.png" class="swt"></li>
+</ul>
+ 
+<!-- ソートするコンテンツ -->
+<ul class="test_list">
+    <li class="red box"><a href="#" class="js-modal-open" data-target="modal01"><img src="img/card.PNG" ></a></li>
+    <li class="red box"><a href="#" class="js-modal-open" data-target="modal02"><img src="img/card.PNG" ></a></li>
+    <li class="red box"><a href="#" class="js-modal-open" data-target="modal03"><img src="img/card.PNG" ></a></li>
+    <li class="red box"><a href="#" class="js-modal-open" data-target="modal04"><img src="img/card.PNG" ></a></li>
+    <li class="green box"><a href="#" class="js-modal-open" data-target="modal05"><img src="img/card.PNG" ></a></li>
+    <li class="blue box"><a href="#" class="js-modal-open" data-target="modal06"><img src="img/card.PNG" ></a></li>
+    <li class="blue box"><a href="#" class="js-modal-open" data-target="modal07"><img src="img/card.PNG" ></a></li>
+    <li class="yellow box"><a href="#" class="js-modal-open" data-target="modal08"><img src="img/card.PNG" ></a></li>
+    <li class="gold box"><a href="#" class="js-modal-open" data-target="modal09"><img src="img/card.PNG" ></a></li>
+　　　<!-- 要素はいくつでも並べられる -->
+</ul>
+
+<div id="modal01" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+        <h1>展示映像における３ＤＣＧを用いた写実的な表現について</h1><p>165029　福田美咲先輩</p>
+      <img src="img/hukuda.png" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+
+<div id="modal02" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>３DCGにおけるTRACKINGとMATCH MOVINGの役割（50年後の未来都市、北九州市を中心に制作）</h1><p>155048　文東源先輩</p>
+        <iframe width="240px" height="auto" src="https://www.youtube.com/embed/BE0NMTWGwLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+
+<div id="modal03" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>３DCGを用いた遺跡文化財の再現について朝鮮時代の勤政殿（クンジョンジョン）を中心に</h1><p>185021　キムユンジョン先輩</p>
+      <img src="img/tatemono.png" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+<div id="modal04" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>NPRを用いた肖像画のデジタル化について</h1><p>195027　坂本大樹</p>
+      <img src="img/sakamoto.jpg" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+<div id="modal05" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>ドット絵によるスペースインベーダーのリメークについて</h1><p>155048　文東源先輩</p>
+      <img src="img/inve.jpg" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+<div id="modal06" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>ビジュアライゼーションを用いたバスの路線図のリ・デザインについて</h1><p>135035　宮地澄佳</p>
+      <img src="img/bus.png" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+<div id="modal07" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>地球温暖化についての体験型映像制作</h1><p>165018　ソイェラン先輩</p>
+      <img src="img/ixeran.jpg" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+<div id="modal08" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>ARを用いた新たな展示方法の提案について</h1><p>165016　清水茉美佳先輩</p>
+      <img src="img/ipad.jpg" width="240px">
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+<div id="modal09" class="modal js-modal">
+  <div class="modal-bg js-modal-close">
+  </div>
+    <div class="modal-content">
+      <h1>飲酒運転撲滅を訴えるドキュメンタリー制作</h1><p>185007　伊藤百花先輩</p>
+      <iframe width="240px" height="auto" src="https://www.youtube.com/embed/C3Yypf5R-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="#" class="js-modal-close">閉じる</a>
+    </div>
+</div>
+    
+
+
+
+</div>
+    
+    
+
+    <a href="job.html" id="sen"><img src="img/shushoku.png" width="60%"></a>
+
+
+    <script>
+    jQuery(function($) {
+ 
+/* 要素を取得(ボタンと要素) */
+var btnList = $('#filterBtnList *'),
+btnAll = $('#filterAll'),
+btnRed = $('#filterRed'),
+btnGreen = $('#filterGreen'),
+btnBlue = $('#filterBlue'),
+btnBlue = $('#filterYellow'),
+btnBlue = $('#filterGold'),
+box = $('.box');
+ 
+/* ボタンのいずれかをクリックした場合 */
+btnList.click(function(){
+  if(!($(this).hasClass('is_active'))){
+     var filterClass = $(this).attr('class');    
+     btnList.removeClass('is_active');
+     $(this).addClass('is_active');
+ 
+     box.each(function() {
+        $(this).fadeOut(0);
+          if($(this).hasClass(filterClass)){
+            $(this).stop().fadeIn(300);
+          }else if(filterClass === 'all'){
+            box.stop().fadeIn(300);     
+          }
+     });    
+  }
+});
+ 
+});</script>
+ 
+<script>
+// モーダルウィンドウを開く
+$('.js-modal-open').on('click', function(){
+  var target = $(this).data('target');
+  var modal = document.getElementById(target);
+  scrollPosition = $(window).scrollTop();
+
+  $('body').addClass('fixed').css({'top': -scrollPosition});
+  $(modal).fadeIn();
+  return false;
+});
+
+// モーダルウィンドウを閉じる
+$('.js-modal-close').on('click', function(){
+  $('body').removeClass('fixed');
+  window.scrollTo( 0 , scrollPosition );
+  $('.js-modal').fadeOut();
+  return false;
+});
+</script>
+
+</body>
+</html>

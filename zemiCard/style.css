@@ -1,0 +1,153 @@
+body{
+    background-image: url(img/back.png);
+    background-size: 100% auto;
+}
+
+.container{
+        margin-top: 88%;
+}
+
+.senpai img{
+    margin-top: 5%;
+    width: 60%;
+    margin-left: 23%;
+}
+
+
+/*ボタンのリスト*/
+ul#filterBtnList{
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul#filterBtnList li{
+    display: inline-block;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+ul#filterBtnList li:hover{
+
+}
+ul#filterBtnList li.is_active{
+
+}
+ 
+/*コンテンツのリスト*/
+ul.test_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul.test_list li{
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.box img{
+    width: 80px;
+}
+.swt{
+    width: 100px;
+}  
+
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+body{
+    background-image: url(img/back2.png);
+    background-size: 100% auto;
+}
+    
+.modal-content{
+          height: 680px;/* これが無いと「overflow:scroll」が利かない */
+  width: 450px;
+    }
+    
+.container{
+        margin-top: 60%;
+}
+    
+.box img{
+    width: 160px;
+}
+.swt{
+    width: 200px;
+}  
+
+.senpai{
+     margin-left: 13%;
+    margin-bottom: 120px;
+    }    
+    
+}
+    
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* モーダル全体(背景＋本体) */
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* モーダル背景 */
+.modal-bg{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* モーダル本体 */
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*overflow: scroll;  はみ出た部分はスクロールさせる */
+  height: 380px;/* これが無いと「overflow:scroll」が利かない */
+  width: 240px;/* これが無いと「overflow:scroll」が利かない */
+  background: #EDEDED;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* モーダルウィンドウ表示中に記事本体を固定 */
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+h1{
+    font-family: 'M+';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.35;
+    letter-spacing: .1em;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+#sen{
+    padding: 40px;
+}

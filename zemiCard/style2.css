@@ -1,0 +1,16 @@
+body{
+    background-image: url(img/2page.png);
+    background-size: 100% auto;
+}
+
+.btn{
+    margin-top: 120%;
+    margin-bottom: 13%;
+    margin-left: 45%; 
+}
+
+a{
+    margin-top: 10px;
+        text-decoration: none;
+    font-size: 20px;
+}
