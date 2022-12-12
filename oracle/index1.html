@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>ゼミ診断</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/style1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>$(window).scroll(function(){
+  //Header
+  if($(window).scrollTop()>= 100){
+     $('.header').addClass('fixed-top');
+  }
+  else {
+    $('.header').removeClass('fixed-top');
+  }
+  //Footer
+    var navpanel = $('.bottom-nav');
+    var panelHeight = navpanel.height() - 4;
+    var footerHeight = $('.footer').height();
+    if( $(document).height() - panelHeight - footerHeight <= $(window).scrollTop() + $(window).height() ) {
+      navpanel.removeClass('fixed-bottom');
+    } 
+  else {
+    navpanel.addClass('fixed-bottom');
+  }
+  
+});</script>
+<script>$(function () {
+    $(".btn").on("click", function () {
+        $(this).closest("div").css("display", "none");
+        id = $(this).attr("href");
+        $(id).addClass("fit").show("slow");
+    });
+});</script>
+ </head>
+ <body>
+ <!----- header----->
+ <header class="header">
+  <div class="container">
+    <h1 class="logo"><img src="img/logo.png"  alt="西日本工業大学" width=40px style="margin-top: 10px;"></h1>
+      
+    <ul class="nav">
+      <li><a href="home.html">ゼミ診断</a></li>
+      <li><a href="senpai.html">先輩の口コミ</a></li>
+      <li><a href="movie.html">動画</a></li>
+
+    </ul>
+  </div>
+</header>
+
+ <!----- /header ----->
+ 
+ <!----- main ----->
+ <article class="main-index">
+<div id="q_01" class="fit question">
+    <h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+ <p class="text">正直なところデザインは……</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_02">▷　好きだ！</a></li>
+<li class="odd"><a class="btn" href="#q_10">▷　苦手かも</a></li>
+
+</ul>
+ </div>
+ <!-- 最初の選択肢 -->
+  
+<div id="q_02" style="display: none;" class="question">
+    <h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">自由課題！何を作る？</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_03">▷　ポスターだね！</a></li>
+<li class="odd"><a class="btn" href="#q_04">▷　ポスター以外！</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 --> 
+ 
+<div id="q_03" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">先生との交流</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_05">▷　したい！</a></li>
+<li class="odd"><a class="btn" href="#q_06">▷　別にいい</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 --> 
+  
+<div id="q_04" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">メールの返事は……</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_07">▷　一刻も早くほしい</a></li>
+<li class="odd"><a class="btn" href="#q_08">▷　都合のいいときで</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 --> 
+  
+ <div id="q_05" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">唐揚げにレモンをかけられちゃった！</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_01">▷　許せる！</a></li>
+<li class="odd"><a class="btn" href="#a_02">▷　許せない</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_06" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+<h2 class="kasen">QUESTION 01</h2>
+<p class="text">アニメをよく見る</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_01">▷　結構見る方だ！</a></li>
+<li class="odd"><a class="btn" href="#a_03">▷　そんなに見ない</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_07" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">課題のためなら学校に泊まれる</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_04">▷　断然泊まれる</a></li>
+<li class="odd"><a class="btn" href="#a_05">▷　おうちかえる</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+  
+<div id="q_08" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">ゲームが好き</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_06">▷　かなりゲーム好き</a></li>
+<li class="odd"><a class="btn" href="#q_09">▷　それほどでもない</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_09" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">ほかの人と違うことがしたい！</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_01">▷　はい</a></li>
+<li class="odd"><a class="btn" href="#a_07">▷　いいえ</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_10" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">どちらかというと？</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_11">▷　クリエイティブ</a></li>
+<li class="odd"><a class="btn" href="#q_12">▷　ロジスティクス</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_11" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">先生と目が合った！</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_13">▷　目をそらす</a></li>
+<li class="odd"><a class="btn" href="#q_14">▷　話しかける</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_12" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">ゲームが好き</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_06">▷　かなりのゲーム好き</a></li>
+<li class="odd"><a class="btn" href="#q_15">▷　べつにそれほどでも</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_13" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">好きなものは？</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_01">▷　最初に食べる！</a></li>
+<li class="odd"><a class="btn" href="#a_06">▷　最後に食べる！</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_14" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">明日締め切りの課題が終わっていない！</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#q_16">▷　徹夜してでも仕上げる</a></li>
+<li class="odd"><a class="btn" href="#q_17">▷　おやすみなさい……zzz</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_15" style="display: none;" class="question">
+    <h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">趣味がある</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_01">▷　ある</a></li>
+<li class="odd"><a class="btn" href="#a_08">▷　ない</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_16" style="display: none;" class="question">
+<h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">メールの返信は……</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_04">▷　一刻も早くほしい</a></li>
+<li class="odd"><a class="btn" href="#a_06">▷　都合のいいときに</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+     
+<div id="q_17" style="display: none;" class="question">
+    <h1 class="image-title"><img src ="img/question-title.png"></h1>
+    <h2 class="kasen">QUESTION 01</h2>
+<p class="text">人とちがうことがしたい</p>
+<ul class="flexbox fw">
+<li class="even"><a class="btn" href="#a_01">▷　もちろん</a></li>
+<li class="odd"><a class="btn" href="#a_07">▷　べつに</a></li>
+</ul>
+</div>
+<!-- 次の選択肢 -->
+  
+ 
+ 
+<!-- 選択肢の答え① -->
+  
+  <div id="a_01" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+<span style="font-size: 2em;">メディア理論の伝道師『宝珠山ゼミ』</span>です！！</p>
+<img src="img/houjuyama.png">
+    <h3>あなたの性格は……</h3>
+    <p class="seikaku">あなたは宝珠山ゼミのエレメントが強い人です。<br>
+今までの大学生活で、課題という名の枠が窮屈ではありませんでしたか？<br>
+自由を愛するあなたは、宝珠山ゼミで大空へはばたきます。鳥のように。<br>
+そんなあなたを宝珠山先生は優しく見守り続けるでしょう。バードウォッチングのように。
+</p>
+      <h3>宝珠山先生ってどんな人？</h3>
+      <p class="seikaku">メディア理論の伝道師で、一聞いたら十教えてくれます。<br>
+やりたいことを追い求めるあなたに、宝珠山ゼミはいつでも門戸を開いています。
+</p>
+      <h3>宝珠山ゼミの特徴</h3>
+      <p class="seikaku">３Dプリンター(無)
+      </p>
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_02" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+<span style="font-size: 2em;">言論の革命者『梶谷ゼミ』</span>です！！</p>
+<img src="img/kajitani.png">
+
+<h3>あなたの性格は……</h3>
+    <p class="seikaku">あなたは梶谷ゼミのエレメントが強い人です。<br>
+梶谷ゼミのエレメントが強い人はユニークな着眼点をもっているので、あっと驚くアイデアを隠しもっています。<br>
+ショッピングやネットサーフィンをしていて、自分ならこうするのにな…と思ったことはありませんか？<br>
+梶谷先生は、あなたの着眼点を活かす方法を一緒に考えてくれます。<br>
+梶谷先生の元でこそ輝きを放つことができるでしょう。
+</p>
+      <h3>梶谷先生ってどんな人？</h3>
+      <p class="seikaku">どんなレベルにも合わせ、理解させることができるスキルを持っています。<br>
+興味のある分野はあるんだけど、本を開くと難しい理論や数式に頭が痛くなっちゃう人もいるかもしれませんね。<br>
+心配しないで、梶谷先生だけは見捨てません。<br>
+必ずステップを作って目標に手を届く手助けをしてくれるでしょう。<br>
+梶谷先生の手をとって歩けば、なりたい自分にきっとなれることでしょう。
+</p>
+      <h3>梶谷ゼミの特徴</h3>
+      <p class="seikaku">３Dプリンター（壊）</p>
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_03" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+    <span style="font-size: 2em;">シンプル・イズ・HAMACHI『浜地ゼミ』</span>です！！</p>
+<img src="img/hamachi.png">        
+<h3>あなたの性格は……</h3>
+<p class="seikaku">浜地ゼミのエレメントが強いあなたは、職人肌なタイプ。<br>
+自分の制作物が完成した後も、もっとよくなるにはどうしたら良いのか考えたことはありませんか？<br>
+やる気のある学生にこそ浜地先生は応えます。<br>
+妥協を好まないあなたは、浜地先生の元でその理想を掴み取ることができるでしょう
+</p>
+<h3>浜地先生ってどんな人？</h3>
+<p class="seikaku">一見クールで近寄りがたい印象を受ける人もいるかもしれません。<br>
+ですが、ひとたび先生を知れば、とてもそのように言い表すことはできなくなります。<br>
+浜地先生は、やる気を見せた学生にのみ、その情熱を開示します。<br>
+内に秘めたる理想を掲げ、浜地先生の指導の元邁進すれば、夢はやがて現実になるでしょう。
+</p>
+<h3>浜地ゼミの特徴</h3>
+<p class="seikaku">３Dプリンター（無）</p>
+<span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_04" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+    <span style="font-size: 2em;">視覚のイリュージョニスタ『趙ゼミ』</span>です！！</p>
+<img src="img/cho.png">
+<h3>あなたの性格は……</h3>
+<p class="seikaku">あなたは趙ゼミのエレメントが強い人です。<br>
+趙ゼミのエレメントが強い人は、どんな分野のことでもやりたいことが定まれば一生懸命に努力することができるので、伸びるのが早いです。<br>
+あなたのその頑張りを趙先生は放っておきません。<br>
+何度も通い詰めたゼミ室はきっとあなたにとって居心地の良い空間になるでしょう。
+</p>
+<h3>趙先生ってどんな人？</h3>
+<p class="seikaku">完全実力主義です。合理性を重んじる傾向があります。<br>
+はじめは驚くかもしれませんが、だいじょうぶ。<br>
+あなたにとって住み良いゼミ室になるよう配慮してくれます。<br>
+また、分野を問わずどんな制作物であっても応援してくれます。<br>
+アイデア出しの段階から根気強くアドバイスを言い、必ず今の自分以上のものを作らせてくれます。<br>
+ただし、長い間ゼミに顔を出さなかったり、進捗を発表しないのはご法度。<br>
+ゼミには、宿泊を伴うイベントがあります。
+</p>
+<h3>趙ゼミの特徴</h3>
+<p class="seikaku">３Dプリンター（大１小２）</p>
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_05" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+    <span style="font-size: 2em;">アブソリュート・エンペラー『中島ゼミ』</span>です！！</p>
+<img src="img/nakashima.png">
+<h3>あなたの性格は……</h3>
+<p class="seikaku">あなたは中島ゼミのエレメントが強い人です。<br>
+中島ゼミのエレメントが強い人は、やる気にムラがありますが、強いこだわりをどこかに隠し持っているので、経験を踏めば周囲が驚くものを作ります。<br>
+宿題をする前にテレビやゲームに興じてしまったことはありませんか？<br>
+あなたが娯楽に耽っている間にも中島先生はあなたをじっと見ています。<br>
+やればやるだけ評価してくれる中島ゼミにだんだん虜になっていくはず。
+</p>
+<h3>中島先生ってどんな人？</h3>
+<p class="seikaku">全国で3000人しかいないとされている、やる気スイッチを把握している人です。<br>
+作りたいものはあるんだけど、モチベーションの管理が難しい人は、中島先生に操ってもらうのがオススメ。<br>
+バブル期のリーマンがごとく、狂ったように作業をしている自分に出会えるかも。<br>
+ちなみに、先生が座っている椅子は、人間工学に基づいて設計された高級椅子です。<br>
+椅子は100円で借りることができる噂が。<br>
+物価高の煽りを受けて値上がりする前に試してみては。
+</p>
+<h3>中島ゼミの特徴</h3>
+<p class="seikaku">３Dプリンター</p>
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_06" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+    <span style="font-size: 2em;">緻密なニュータイプ『領木ゼミ』</span>です！！</p>
+<img src="img/ryouki.png">
+<h3>あなたの性格は……</h3>
+<p class="seikaku">あなたは領木ゼミのエレメントが強い人です。<br>
+好奇心旺盛で、流行に敏感なところがあるのではないでしょうか。<br>
+新しいもの好きのあなたは、日進月歩の技術を追うことに向いています。<br>
+また、人の役に立ちたいという優しい心を領木先生の元で技術を通して実現することで、確かな自信とやる気を生命保険のように積立られます。<br>
+</p>
+<h3>領木先生ってどんな人？</h3>
+<p class="seikaku">難しくて移り変わりの早いトレンド技術は、迂闊に触ろうと思っても行き詰まりがち。<br>
+そんな時は焦りと苛立ちで目の前が真っ暗になりますよね。<br>
+領木先生は、そんなときに慈愛の手を差し伸べてくれます。<br>
+恐れていたあんなツールやこんな言語も、領木先生というご加護が有れば恐るるにたらず！<br>
+貪欲に新しい技術に触れることができます。
+</p>
+<h3>領木ゼミの特徴</h3>
+<p class="seikaku">３Dプリンター（無）</p>
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_07" style="display: none;" class="answer">
+<p class="osusume">あなたにおすすめなのは…<br>
+    <span style="font-size: 2em;">音速タイピングの貴公子『今中ゼミ』</span>です！！</p>
+<img src="img/imanaka.png">
+<h3>あなたの性格は……</h3>
+<p class="seikaku">あなたは今中ゼミのエレメントが強い人です。<br>
+今中ゼミのエレメントが強い人は、ジグゾーパズルを完成させて喜びを得られるタイプの人が多いです。<br>
+また、慎重さと高い適応力を持っているのが特徴です。
+</p>
+<h3>今中先生ってどんな人？</h3>
+<p class="seikaku">慎重さ故に人間関係を築くのに時間がかかりがちな人もいるかも知れません。<br>
+そんなあなたにとって、にこやかに語りかけてくれる今中先生のゼミは馴染みやすいことでしょう。<br>
+知らず知らずのうちに、自分から先生に話しかけていることもあるかもしれませんよ。
+</p>
+<h3>今中ゼミの特徴</h3>
+<p class="seikaku">３Dプリンター（無）</p>
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+     
+  <div id="a_08" style="display: none;" class="answer">
+        <p class="osusume">あなたにおすすめなのは…<br>
+            <span style="font-size: 2em;">可能性の守護者『竹中ゼミ』</span>です！！</p>
+<img src="img/takenaka.png">
+<h3>あなたの性格は……</h3>
+<p class="seikaku">あなたは竹中ゼミのエレメントが強い人です。<br>
+今まで、デザインという枷に縛られていたあなたにとって竹中ゼミはこの情報デザイン学科唯一の安息の地といえることでしょう。
+</p>
+
+     <span><a class="btn modoru" href="#q_01">もどる</a></span>
+</div>
+ </article>
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ 
+ <!----- /footer ----->
+ </body>
+</html>
+
